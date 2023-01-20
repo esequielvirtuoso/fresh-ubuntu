@@ -26,5 +26,14 @@ install-robomongo:
 install-zoom:
 	./hack/9-install-zoom.sh
 
-install-everything: install-git install-keybase set-ssh-permissions install-postman install-robomongo install-zoom
+install-docker:
+	./hack/10-install-docker.sh
+
+set-up-zsh:
+	./hack/11-set-up-zsh.sh
+
+install-go:
+	./hack/12-install-go.sh
+
+install-everything: install-git install-keybase set-ssh-permissions install-postman install-robomongo install-zoom install-docker
 	echo "**************** YOU ARE GOOD TO GO! ****************"
