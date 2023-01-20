@@ -20,5 +20,11 @@ install-datagrip:
 disable-ipv6:
 	./hack/7-disable-ipv6.sh
 
-install-everything: install-git install-keybase set-ssh-permissions install-postman
+install-robomongo:
+	./hack/8-install-robomongo.sh
+
+install-zoom:
+	./hack/9-install-zoom.sh
+
+install-everything: install-git install-keybase set-ssh-permissions install-postman install-robomongo install-zoom
 	echo "**************** YOU ARE GOOD TO GO! ****************"
