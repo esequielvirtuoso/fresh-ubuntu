@@ -35,5 +35,5 @@ set-up-zsh:
 install-go:
 	./hack/12-install-go.sh
 
-install-everything: install-git install-keybase set-ssh-permissions install-postman install-robomongo install-zoom install-docker
+install-everything: install-git install-keybase set-ssh-permissions install-postman install-robomongo install-zoom install-docker install-go
 	echo "**************** YOU ARE GOOD TO GO! ****************"
