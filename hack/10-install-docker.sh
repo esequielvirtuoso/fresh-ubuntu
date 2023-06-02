@@ -22,3 +22,7 @@ sudo usermod -aG docker $USER
 newgrp docker
 docker run hello-world
 echo "**************** Docker successfully set! ****************"
+
+# COMPOSE
+sudo apt update
+sudo apt install docker-compose
