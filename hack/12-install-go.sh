@@ -4,10 +4,11 @@ sudo apt install vim -y
 vim --version
 echo "**************** Vim successfully installed! ****************"
 
-echo "**************** Removing any previous go version and installing go 1.19.5... ****************"
-wget -c https://go.dev/dl/go1.19.5.linux-amd64.tar.gz
+echo "**************** Removing any previous go version and installing newer version... ****************"
+VERSION=1.20.4
+wget -c https://go.dev/dl/go$VERSION.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go
-sudo tar -C /usr/local -xzf go1.19.5.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go$VERSION.linux-amd64.tar.gz
 
 
 echo "**************** Set go environment variables... ****************"
